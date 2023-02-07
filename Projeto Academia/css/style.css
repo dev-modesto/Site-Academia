@@ -772,3 +772,248 @@ font-variation-settings:
 
 
 
+
+/* ----------------------------------------------------------------------------- rodape */
+footer{
+    height: 100vh;
+    /* background-color: rgba(48, 48, 48, 0.9); */
+    color: #dddddd;
+}
+
+.footer-principal{
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../imagens/footer\ imagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.footer-principal-2{
+    /* border: 3px solid rgb(0, 238, 255); */
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-color: rgba(29, 29, 29, 0.9);
+}
+
+.footer-principal-3{
+    background-color: rgba(15, 15, 15, 0.9);
+    font-weight: 600;
+    height: 5%;
+}
+
+
+.footer-div-1, .footer-div-2, .footer-div-3{
+    /* border: 2px solid blue; */
+    width: 30%;
+    height: 100%;
+    color: rgb(235, 234, 234);
+    padding-top: 130px;
+    
+}
+
+.footer-div-2, .footer-div-3{
+    width: 35%;
+    padding: 300px 55px ;
+}
+
+.footer-div-2 a{
+    text-decoration: none;
+    color: rgb(235, 234, 234);
+    font-size: 1.5em;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.divisao h2{
+    margin-bottom: 50px;
+    font-size: 2.0em;
+}
+
+.divisao ul li a{
+    color: rgb(235, 234, 234); 
+    text-decoration: none;
+
+}
+
+.divisao li{
+    text-decoration: none;
+    color: rgb(235, 234, 234);
+    font-size: 1.3em;
+}
+
+.divisao ul{
+    /* background-color: aqua; */
+    padding: 0;
+    align-items: center;
+}
+
+.footer-div-2, .footer-div-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-div-1-1{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.footer-div-1-1 img{
+    /* border: 5px solid red; */
+    width: 60%;
+    width: 350px;
+}
+
+.footer-div-1-2{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.footer-div-1-2 h6{
+    font-size: 1.5em;
+}
+
+/* -------------------------------------------------------------------- rodape - icones */
+.footer-icons{
+    /* background-color: antiquewhite; */
+    height: auto;
+    /* margin-top: 30px; */
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-icons a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    padding: 5px;
+}
+
+.fab{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+
+.fab:hover{
+    color: tomato;
+
+}
+
+.footer-div-3 ul li{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+
+}
+
+.fa-solid{
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 35px;
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------------- rodape - contato */
+.contato{
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+.contato-texto{
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.contato-icone{
+    /* border: 1px solid; */
+    font-size: 1.9em;
+}
+
+.footer-linha-vertical{
+    /* border: 1px solid blue; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* ------------------------------------------------------------------- rodape - linha de divisao */
+.vl{
+    background-color: antiquewhite;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    width: 1px;
+    height: 80%;
+}
+
+/* ------------------------------------------------------------------- rodape - direitos */
+.direitos{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.dir-1{
+    width: 50%;
+    padding-left: 15px;
+}
+.dir-2{
+    width: 50%;
+    text-align: end;
+    padding-right: 15px;
+}
+
+.dir-1 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+}
+.dir-2 a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+}
