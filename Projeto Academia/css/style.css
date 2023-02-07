@@ -109,6 +109,7 @@ button span{
     top: 0;
     left: 0;
     background: linear-gradient(90deg, rgba(194,217,89,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgb(224, 224, 224) 0%, rgba(0,0,0,0) 100%);
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
@@ -126,6 +127,7 @@ button span{
 }
 
 /*******************************************/
+
 
 .principal-academia{
     background-color: rgb(13, 13, 13);
@@ -318,6 +320,7 @@ hr{
 
 .card-plano-1 ul li, .card-plano-2 ul li, .card-plano-3 ul li{
     list-style: none;
+    font-size: 0.9em;
 }
 
 .card-plano-1 h2, .card-plano-2 h2, .card-plano-3 h2{
@@ -339,6 +342,174 @@ hr{
 
 
 
+/* ----------------------------------------------------------------------------- cards - minimizados */
+.card-completo{
+    /* background-color: black; */
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.card-min{
+    /* border: 1px solid tomato; */
+    width: 100%;
+    padding: 0;
+    margin: 10px;
+    /* height: auto; */
+    align-items: center;
+}
+
+.card-min-completo{
+    background-color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.card-min-completo h2{
+    /* color: blue; */
+    margin: 0;
+}
+
+.card-min-completo--valor, .card-min-completo--tipo, .borda-efeito{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.card-min-completo--valor{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-min-completo--valor h2{
+    color: black;
+    font-weight: 900;
+    font-size:xx-large;
+}
+
+
+.valor-descricao p{
+    margin: 0;
+}
+
+.valor-descricao span{
+    font-size: 0.8em;
+}
+
+
+
+
+
+        
+
+.card-min-completo--tipo{
+    border-left: 1px solid #dddddd;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-min-completo--tipo h2{
+    font-weight: 500;
+
+}
+
+/* ----------------------------------------------------------------------------- cards - minimizados - estilização */
+.borda-efeito-card-1{
+    background: linear-gradient(180deg, rgba(0,255,162,1) 0%, rgba(0,121,255,1) 100%);
+}
+.borda-efeito-card-2{
+    background: linear-gradient(180deg, rgba(92,10,223,1) 0%, rgba(177,0,255,1) 100%);
+}
+.borda-efeito-card-3{
+    background: linear-gradient(180deg, rgba(149,0,185,1) 1%, rgba(228,46,18,1) 100%);
+    
+}
+
+.card-min-completo-1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left top, rgba(0,255,162,1) 0%, rgba(0,121,255,1) 100%);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.card-min-completo-2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left top, rgba(92,10,223,1) 0%, rgba(177,0,255,1) 100%);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.card-min-completo-3::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left top, rgba(149,0,185,1) 1%, rgba(228,46,18,1) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.card-min-completo:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-min-completo:hover p, .card-min-completo:hover h2{
+    color: white;
+    transition: all 0.5s;
+}
+
+.card-min-completo-1:hover, .card-min-completo-2:hover, .card-min-completo-3:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+}
+
+.card-min a{
+    text-decoration: none;
+    color: black;
+}
+
+.borda-efeito{
+    width: 1%;
+}
 
 
 @media screen and (max-width:1000px){
@@ -348,3 +519,185 @@ hr{
     }
     
 }
+
+
+@media (max-width:1000px){
+
+    .col-12{
+        width: 100%;
+    }
+
+    /* remover dps
+    .tabela-planos{
+        display: none;
+    } */
+}
+
+@media (max-width:1200px){
+    .plan{
+        display: none;
+    }
+
+    .tabela-planos{
+        min-height: 90vh;
+        width: 100%;
+
+      
+        background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
+        margin-top: 50px;
+        padding: 10px;
+        margin-bottom: 50px;
+        color: rgb(235, 234, 234);
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .plano-max{
+        display: none;
+    }
+
+}
+
+@media (min-width:1400px){
+    .card-plano-1 ul li, .card-plano-2 ul li, .card-plano-3 ul li{
+        font-size: 1.0em;
+    }
+    
+}
+
+@media (max-width:400px){
+    .tabela-planos{
+        font-size: 0.7em;
+    }
+
+    .card-min-completo{
+        font-size: 0.8em;
+    }
+
+    .card-min-completo--valor h2{
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+    }
+
+    .card-min-completo--tipo h2{
+        font-weight: 500;
+        font-size:large;
+        
+    }
+}
+
+
+@media (min-width:1200px){
+    .tabela-planos{
+        display: none;
+    }
+
+    .card-completo{
+        display: none;
+    }
+
+}
+
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+
+td, th {
+
+text-align: left;
+padding: 8px;
+}
+
+table tr th {
+text-align: center;
+align-items: center;
+}
+
+table tr td {
+text-align: center;
+align-items: center;
+}
+
+.name-td{
+text-align: left;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+background-color: rgba(0, 0, 0, 0.1);
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 900,
+'GRAD' 0,
+'opsz' 48
+}
+
+
+@media (max-width:600px){
+.tabela-planos{
+    font-size: 0.6em;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 10
+  }
+
+  .card-min-completo{
+    font-size: 0.8em;
+}
+
+.card-min-completo--valor h2{
+    color: black;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.card-min-completo--tipo h2{
+    font-weight: 500;
+    font-size:large;
+    
+}
+
+.planos span h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.container-sobre-1{
+    /* background-color: aquamarine; */
+    width: 70%;
+    height: auto;
+    margin-top: 5%; margin-bottom: 5%;
+    font-size: 1.0em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container-academia-2{
+
+    font-size: 1.0em;
+
+
+}
+
+}
+
+
+
+
+
+

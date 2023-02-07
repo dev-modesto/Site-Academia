@@ -13,6 +13,8 @@
     <!-- link font -->
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- link icones  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
@@ -41,7 +43,7 @@
                             <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Planos</a>
+                        <a class="nav-link" href="#planos">Planos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Fale conosco</a>
@@ -53,86 +55,88 @@
         </header>
     <!--  -->
 
-<!-- carrossel -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="imagens/banner1.jpg" class="d-block w-100" alt="...">
-            
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/banner2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="imagens/banner3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-
-    <!-- sobre -->
-    <div class="principal-sobre" id="sobre" >
-        <div class="container-sobre">
-
-
-            <div class="container-sobre-1">
-                <p>Na GP+ FITNESS, o apoio é real e começa no momento em que nos encontramos. Nossos treinadores não têm um plano que se adapta a todos, eles desenvolvem um plano que se adapta a você - uma experiência de condicionamento físico total projetada em torno de suas habilidades, seu corpo e seus objetivos. Seu plano conterá uma abordagem 360 para sua saúde e cobrirá áreas importantes que outras academias simplesmente não podem. O primeiro passo? <a href="#">Entre em contato conosco hoje</a> para que possamos começar. Mal podemos esperar!
-                </p>
+    <!-- seção 1 -->
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> <!-- carrossel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/banner1.jpg" class="d-block w-100" alt="...">
+                
             </div>
+            <div class="carousel-item">
+                <img src="imagens/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="principal-sobre" id="sobre" > <!-- sobre -->
+            <div class="container-sobre">
 
-            <div class="container-sobre-2">
-                
-                <div class="container-sobre-2-2">
-                    <h2>Por que escolher a GP+ FITNESS?</h2>
+
+                <div class="container-sobre-1">
+                    <p>Na GP+ FITNESS, o apoio é real e começa no momento em que nos encontramos. Nossos treinadores não têm um plano que se adapta a todos, eles desenvolvem um plano que se adapta a você - uma experiência de condicionamento físico total projetada em torno de suas habilidades, seu corpo e seus objetivos. Seu plano conterá uma abordagem 360 para sua saúde e cobrirá áreas importantes que outras academias simplesmente não podem. O primeiro passo? <a href="#">Entre em contato conosco hoje</a> para que possamos começar. Mal podemos esperar!
+                    </p>
                 </div>
-                
-                <div class="container mt-4">
+
+                <div class="container-sobre-2">
                     
-                    <div class="row">
+                    <div class="container-sobre-2-2">
+                        <h2>Por que escolher a GP+ FITNESS?</h2>
+                    </div>
+                    
+                    <div class="container mt-4">
                         
-                        <div class="col-12 col-md-4 lg-2">
-                            <div class="card">
-                                <h1>01.</h1>
-                                <h2>Equipamentos</h2>
-                                <p>
-                                    Moderníssimos equipamentos de fitness e atividades que são um sucesso entre os clientes, contribuindo para tornar esta academia mais especial. 
-                                </p>
+                        <div class="row">
+                            
+                            <div class="col-12 col-md-4 lg-2">
+                                <div class="card">
+                                    <h1>01.</h1>
+                                    <h2>Equipamentos</h2>
+                                    <p>
+                                        Moderníssimos equipamentos de fitness e atividades que são um sucesso entre os clientes, contribuindo para tornar esta academia mais especial. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 lg-2">
-                            <div class="card">
-                                <h1>02.</h1>
-                                <h2>Localização</h2>
-                                <p>
-                                    Com a nossa ampla rede de +300 GP+ FITNESS espalhadas pela cidade, você encontrará uma bem pertinho de você,
+                            <div class="col-12 col-md-4 lg-2">
+                                <div class="card">
+                                    <h1>02.</h1>
+                                    <h2>Localização</h2>
+                                    <p>
+                                        Com a nossa ampla rede de +300 GP+ FITNESS espalhadas pela cidade, você encontrará uma bem pertinho de você,
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 lg-2">
-                            <div class="card">
-                                <h1>03.</h1>
-                                <h2>Equipe</h2>
-                                <p>
-                                    Profissionais capacitados para oferecer todo o suporte que você precisa. 
-                                </p>
+                            <div class="col-12 col-md-4 lg-2">
+                                <div class="card">
+                                    <h1>03.</h1>
+                                    <h2>Equipe</h2>
+                                    <p>
+                                        Profissionais capacitados para oferecer todo o suporte que você precisa. 
+                                    </p>
+                                </div>
                             </div>
+                            
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- academia -->
-    <div class="academia">
+    <!-- seção 2 -->
+    <section> 
+    <div class="academia"> <!-- academia -->
         
         <div class="principal-academia">
 
@@ -226,13 +230,14 @@
         </div>
 
     </div>
+    </section>
 
-
-    <!-- planos -->
-    <div class="planos" id="planos">
+    <!-- seção 3 -->
+    <section>
+    <div class="planos" id="planos"> <!-- planos -->
         <div class="principal-planos">
             <span><h2>PLANOS</h2></span>
-            <div class="container mt-4">
+            <div class="container plano-max mt-4">
                 
                 <div class="row">
                     
@@ -311,11 +316,249 @@
                 </div>
 
             </div>
+
+            <!-- cards planos - minimizada -->
+            <div class="container mt-4">
+                <div class="row card-completo">
+
+                    <div class="card-min col-12 col-md-12 lg-2">
+
+                        <a href="#">
+                            <div class="card-min-completo card-min-completo-1">
+                                <div class="borda-efeito borda-efeito-card-1">
+                                    
+                                </div>
+                                
+                                <div class="card-min-completo--valor">
+                                    
+                                    <div class="card-min-efeito">
+                                        
+                                    </div>
+                                    <div class="valor-valor">
+                                        <h2>R$99,90</h2>
+                                    </div>
+                                    <div class="valor-descricao">
+                                        <p>/mensal</p>
+                                        <span><p>R$10,00 inscrição</p></span>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="card-min-completo--tipo">
+                                    <div class="tipo-tipo">
+                                        <h2>GP+ BASIC</h2>
+                                    </div>
+                                    <div class="tipo-descricao">
+                                        <p>
+                                            Ótimo pra quem está começando.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>
+                        
+
+                    </div>
+
+                    <div class="card-min col-12 col-md-12 lg-2">
+
+                        <a href="#">
+                            <div class="card-min-completo card-min-completo-2">
+                                <div class="borda-efeito borda-efeito-card-2">
+                                    
+                                </div>
+    
+                                <div class="card-min-completo--valor">
+                                    
+                                    <div class="valor-valor">
+                                        <h2>R$139,90</h2>
+                                        <div class="valor-descricao">
+                                            <p>/fidelidade 12 meses</p>
+                                            <span><p>R$0,00 inscrição</p></span>
+                                        </div>
+                                    </div>
+                           
+                                </div>
+    
+                                <div class="card-min-completo--tipo">
+                                    <div class="tipo-tipo">
+                                        <h2>GP+ ESSENTIALS</h2>
+                                    </div>
+                                    <div class="tipo-descricao">
+                                        <p>
+                                            Perfeito pra você que já é FITNESS!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="card-min col-12 col-md-12 lg-2">
+
+                        <a href="#">
+                            <div class="card-min-completo card-min-completo-3">
+                                <div class="borda-efeito borda-efeito-card-3">
+                                    
+                                </div>
+                                <div class="card-min-completo--valor">
+                                    <div class="valor-valor">
+                                        <h2>R$229,90</h2>
+                                    </div>
+                                    <div class="valor-descricao">
+                                        <p>/fiedelidade 16 meses</p>
+                                        <span><p>R$0,00 inscrição</p></span>
+                                    </div>
+                                </div>
+    
+                                <div class="card-min-completo--tipo">
+                                    <div class="tipo-tipo">
+                                        <h2>GP+ FULL</h2>
+                                    </div>
+                                    <div class="tipo-descricao">
+                                        <p>
+                                            Pra você que deseja aproveitar toda a experiência GP+ FITNESS!
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="tabela-planos"> <!-- tabela de planos - minimizada -->
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>R$99,90</th>
+                        <th>R$139,90</th>
+                        <th>R$299,90</th>
+                    </tr>
+
+                    <tr>
+                        <td class="name-td">Cardio, pesos e máquinas</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="name-td">Vestiários com Chuveiros</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Programa de nutrição on-line</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Treino de Circuito de Meia Hora de Potência</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Treinamento pessoal</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Zona de alongamento</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Estacionamento gratuito no local</td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Aulas de ginástica em grupo</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Relaxe e recupere sessões de recuperação assistida</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Acesso ilimitado a TODAS as academias da rede</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Aulas de passeio</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Camiseta grátis</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Escaneamento corporal 3D</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Piscina e Banheira de Hidromassagem</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Terapia de luz vermelha</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Cápsula seca de bem-estar</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>
+                    <tr>
+                        <td class="name-td">Saunas infravermelhas</td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined"></span></td>
+                        <td><span class="material-symbols-outlined">check</span></td>
+                    </tr>   
+                    
+                    
+                </table>
+            </div> 
+
         </div>
     </div>
 
+    </section>
 
-
+    
 
 <!-- Bootstrap link script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
