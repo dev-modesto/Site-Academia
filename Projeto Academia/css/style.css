@@ -734,6 +734,10 @@ footer{
     /* border: 1px solid red; */
 }
 
+#footer-min-login{
+    height: 0vh;
+}
+
 .footer-principal{
     /* border: 3px solid red; */
     width: 100%;
@@ -952,6 +956,10 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     font-size: 0.8em;
+}
+
+.direitos-login{
+    padding: 15px;
 }
 
 .dir-1{
@@ -1177,6 +1185,159 @@ footer{
 
 
 
+/* ---------------------------------------------------------------------- login */
+.login{
+    background-image: url(../imagens/login-fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    /* border: 3px solid blue; */
+}
+
+#principal-login{
+    width: 40vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    /* padding: 50px; */
+}
+
+.logo-login{
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-left: 15px;
+    /* border: 1px solid red; */
+}
+
+#container-login{
+    /* border: 1px solid red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 86vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#top-header span{
+    color: rgb(10, 10, 10);
+    font-size:0.8em;
+    font-weight: 300;
+}
+
+#top-header header{
+    color: rgb(63, 63, 63);
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+.login-checkbox label{
+    color: black;
+}
+
+.input{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    padding: 0px 10px 0 10px;
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+#login-entrar{
+    margin-top: 10px;
+    
+}
+
+#login-entrar input{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#login-entrar input{
+    font-weight: 300;
+}
+
+#login-entrar input:active{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    transition: all 0.2s;
+}
+
+#login-entrar input:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+::placeholder{
+    color: rgb(138, 138, 138);
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.login-checkbox label{
+    color: black;
+    font-size:medium;
+    font-weight: 200;
+}
+
+.login-checkbox input{
+    cursor: pointer;
+}
+
+.login-esqueceu a{
+    color: black;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: medium;
+}   
+
+.login-esqueceu a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.botao{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro{
+    margin-top: 10px;
+    color: black;
+    font-weight: 200;
+    font-size: 1.0em;
+}
+
+.cadastro a{
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.cadastro a:hover{
+    color: rgb(45, 37, 58);
+    font-weight: 500;
+}
+
 
 
 
@@ -1280,4 +1441,61 @@ footer{
             font-size: 1.0em;
         }
 
+        @media (max-width:600px){
+            .cadastro{
+                margin-top: 10px;
+                color: black;
+                font-weight: 200;
+                font-size: 0.8em;
+            }
+        }
+
+
     }
+
+
+
+/* -------------------------------------------------------------------- link whatsapp */
+.whatsapp-link {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px rgb(51, 51, 51);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.whatsapp-link:hover{
+    color: black;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fa-whatsapp {
+    /* margin-top: 16px; */
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media (min-width:990px){
+    .collapse{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+
+
+
+
+
