@@ -1,0 +1,17 @@
+-------- Site desenvolvido para apresentação em sala de aula --------
+
+
+
+___________________________ CONHECIMENTOS ___________________________
+CURSO: Tec. em Informática (Desenvolvimento Web) - SENAC MADUREIRA-RJ
+TEMPO NO CURSO: 4 meses
+
+_____________________________________________________________________
+- TEMA: Academia
+- DESENVOLVIDO EM: 25/01/2023 a 29/01/2023.
+
+AUTORES:
+https://github.com/Gabriel-Modesto
+https://github.com/Peterson-santos
+https://github.com/luizfelipe02081
+
