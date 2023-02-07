@@ -696,7 +696,7 @@ footer{
     /* border: 2px solid blue; */
     width: 30%;
     height: 100%;
-    color: rgb(235, 234, 234);
+    color: rgb(201, 201, 201);
     padding-top: 130px;
     
 }
@@ -708,10 +708,14 @@ footer{
 
 .footer-div-2 a{
     text-decoration: none;
-    color: rgb(235, 234, 234);
+    color: rgb(201, 201, 201);
     font-size: 1.5em;
     /* border: 1px solid red; */
     padding: 10px;
+}
+
+.footer-div-2 a:hover, .footer-div-2-min a:hover{
+    color: #ffffff;
 }
 
 .divisao h2{
@@ -720,14 +724,14 @@ footer{
 }
 
 .divisao ul li a{
-    color: rgb(235, 234, 234); 
+    color: rgb(201, 201, 201);
     text-decoration: none;
 
 }
 
 .divisao li{
     text-decoration: none;
-    color: rgb(235, 234, 234);
+    color: rgb(201, 201, 201);
     font-size: 1.3em;
 }
 
@@ -803,17 +807,20 @@ footer{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    color: black;
+    color: #6b6b6b;
     width: 30px;
     height: 30px;
     font-size: 1.5em;
     /* border: 1px solid red; */
     padding: 5px;
+    transition: all 0.2s;
 }
 
 .fab:hover{
-    color: tomato;
-
+    color: rgb(0, 0, 0);
+    color: #ffffff;
+    background-color: rgb(150, 150, 150);
+    transition: all 0.2s;
 }
 
 .footer-div-3 ul li{
@@ -886,22 +893,29 @@ footer{
 .dir-1{
     width: 50%;
     padding-left: 15px;
+    color: rgb(150, 150, 150);
 }
 .dir-2{
     width: 50%;
     text-align: end;
     padding-right: 15px;
+    color: rgb(150, 150, 150);
 }
 
 .dir-1 a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(184, 184, 184);
     font-weight: 400;
+
 }
 .dir-2 a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(184, 184, 184);
     font-weight: 300;
+}
+
+.dir-2 a:hover, .dir-1 a:hover, .dir-2-min a:hover, .dir-1-min a:hover{
+    color: rgb(255, 255, 255);
 }
 
 /* ------------------------------------------------------------------------- rodape minimizado */
@@ -941,7 +955,7 @@ footer{
 
 .footer-div-2-min a{
     text-decoration: none;
-    color: rgb(235, 234, 234);
+    color: rgb(201, 201, 201);
     font-size: 1.5em;
     /* border: 1px solid red; */
     padding: 10px;
@@ -953,14 +967,14 @@ footer{
 }
 
 .divisao-min ul li a{
-    color: rgb(235, 234, 234); 
+    color: rgb(201, 201, 201);
     text-decoration: none;
 
 }
 
 .divisao-min li{
     text-decoration: none;
-    color: rgb(235, 234, 234);
+    color: rgb(201, 201, 201);
     font-size: 1.3em;
 }
 
@@ -974,7 +988,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    color: rgb(201, 201, 201);
 }
 
 .footer-div-1-1-min{
@@ -1084,22 +1098,24 @@ footer{
     width: 100%;
     padding-left: 15px;
     text-align: center;
+    color: rgb(150, 150, 150);
 }
 .dir-2-min{
     /* border: 1px solid red; */
     width: 100%;
     text-align: center;
     padding-right: 15px;
+    color: rgb(150, 150, 150);
 }
 
 .dir-1-min a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(184, 184, 184);
     font-weight: 400;
 }
 .dir-2-min a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(184, 184, 184);
     font-weight: 300;
 }
 
@@ -1131,7 +1147,8 @@ footer{
 .logo-login{
     height: 10vh;
     background-color: rgba(255, 255, 255, 0.9);
-    padding-left: 15px;
+    padding-left: 12px;
+    padding-top: 12px;
     /* border: 1px solid red; */
 }
 
@@ -1498,6 +1515,109 @@ footer{
 
 
 
+/* ---------------------------------------------------------------------- imc */
+.principal-imc{
+    background-color: rgb(246 , 246, 246);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.imc-container{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+
+}
+
+.imc{
+
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imc-calc{
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+
+
+.imc-titulo{
+    font-size: 2.5em;
+    font-weight: 400;
+    color: black;
+}
+
+    .divAltura{
+        margin-top: 20px;
+    }
+    .divPeso, .divCalc{
+        margin-top: 15px;
+    }
+
+        .divCalc button{
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: #e7e7e7;
+            font-weight: 600;
+        }
+
+        .divCalc button:active{
+            background-color: #b8b8b8;
+            transition: all 0.1s;
+        }
+
+    .numero input, .numero-peso input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        outline: none;
+        background-color: transparent;
+        padding-left: 10px;
+    }
+
+    .numero input::placeholder, .numero-peso input::placeholder{
+        font-size: 0.9em;
+    }
+
+    .resultado{
+        margin-top: 15px;
+        font-size: 1.2em;
+    }
+
+
+
+.imagem-imc{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-image: url(../imagens/imc.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-imc-efeito{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+
+}
+
+
 
 
 
@@ -1515,6 +1635,42 @@ footer{
     .academia-2{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .imc-container{
+        justify-content: center;
+        background-color: black;
+        background-image: url(../imagens/imc.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .imc{
+        background-color: rgba(255, 255, 255, 0.95);
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagem-imc{
+        width: 0%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        background-image: none;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .imc-calc{
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 400px;
+        text-align: center;
     }
 
 }
@@ -1855,6 +2011,4 @@ footer{
 
 
 }
-
-
 

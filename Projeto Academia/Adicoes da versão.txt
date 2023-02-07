@@ -1,0 +1,3 @@
+- color hover rodapé links e icones
+- ajuste logo login
+- calculo imc

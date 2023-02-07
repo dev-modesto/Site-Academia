@@ -74,20 +74,19 @@
         </header>
     <!--  -->
 
-
     <!-- seção 1 -->
     <section>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> <!-- carrossel -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="imagens/banner1.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/banner1.jpg" class="d-block w-100" alt="Inscreva-se agora">
                 
             </div>
             <div class="carousel-item">
-                <img src="imagens/banner2.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/banner2.jpg" class="d-block w-100" alt="Ginasio da GP+ FITNESS">
             </div>
             <div class="carousel-item">
-                <img src="imagens/banner3.jpg" class="d-block w-100" alt="...">
+                <img src="imagens/banner3.jpg" class="d-block w-100" alt="Saude, qualidade de vida e bem-estar">
             </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -105,7 +104,7 @@
 
 
                 <div class="container-sobre-1">
-                    <p>Na GP+ FITNESS, o apoio é real e começa no momento em que nos encontramos. Nossos treinadores não têm um plano que se adapta a todos, eles desenvolvem um plano que se adapta a você - uma experiência de condicionamento físico total projetada em torno de suas habilidades, seu corpo e seus objetivos. Seu plano conterá uma abordagem 360 para sua saúde e cobrirá áreas importantes que outras academias simplesmente não podem. O primeiro passo? <a href="#">Entre em contato conosco hoje</a> para que possamos começar. Mal podemos esperar!
+                    <p>Na GP+ FITNESS, o apoio é real e começa no momento em que nos encontramos. Nossos treinadores não têm um plano que se adapta a todos, eles desenvolvem um plano que se adapta a você - uma experiência de condicionamento físico total projetada em torno de suas habilidades, seu corpo e seus objetivos. Seu plano conterá uma abordagem 360 para sua saúde e cobrirá áreas importantes que outras academias simplesmente não podem. O primeiro passo? <a href="https://web.whatsapp.com/">Entre em contato conosco hoje</a> para que possamos começar. Mal podemos esperar!
                     </p>
                 </div>
 
@@ -606,6 +605,61 @@
 
     </section>
 
+    
+    <section>
+        <div class="principal-imc" >
+            <div class="imc-container">
+                <div class="imc">
+
+                    <div class="imc-calc">
+                    
+                        <div class="imc-titulo">
+                            <h2>Cálculo IMC</h2>
+                        </div>
+                        
+
+                        <div class="divAltura">
+                            <div class="altura">
+                                <label for="altura">Altura (M)</label>
+                            </div>
+                            
+                            <div class="numero">
+                                <input type="number" id="altura" placeholder="Ex: 1,50"/>
+                            </div>
+                        </div>
+
+                        <div class="divPeso">
+                            <div class="peso">
+                                <label for="peso">Peso (KG)</label>
+                            </div>
+                            <div class="numero-peso">
+                                <input type="number" id="peso" placeholder="Ex:60" />
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="divCalc">
+                            <button onclick="calcIMC()">Calcular</button>
+                        </div>
+                        
+                        <div class="resultado" >
+                            <span id="resultado"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="imagem-imc">
+                    
+                    <div class="imagem-imc-efeito">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- seção 4 -->
     <section> 
         <div class="principal-localizacao" id="horarios"> <!-- localização pag 1-->
@@ -656,7 +710,7 @@
 
     <!-- seção 5 -->
     <section>
-        <div class="principal-mensagem"> <!-- enviar mensagem -->
+        <div class="principal-mensagem" id="mensagem"> <!-- enviar mensagem -->
 
             <div class="mensagem">
                 
@@ -776,7 +830,7 @@
                             Copyright © 2023. Todos os direitos reservados &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
                         </div>
                         <div class="dir-2">
-                            <span>Desenvolvido por:</span> <i><a href="#">Gabriel Modesto</a></i> - <i><a href="#">Peterson Henrique</a></i> - <i><a href="#">Luiz Felipe</a></i>
+                            <span>Desenvolvido por:</span> <i><a href="https://www.linkedin.com/in/gabrielm-oliveira/">Gabriel Modesto</a></i> - <i><a href="https://github.com/Peterson-santos">Peterson Henrique</a></i> - <i><a href="https://github.com/luizfelipe02081">Luiz Felipe</a></i>
                         </div>
                     </div>
                 </div>
@@ -876,7 +930,7 @@
                             Copyright © 2023. Todos os direitos reservados &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
                         </div>
                         <div class="dir-2-min">
-                            <span>Desenvolvido por:</span> <i><a href="#">Gabriel Modesto</a></i> - <i><a href="#">Peterson Henrique</a></i> - <i><a href="#">Luiz Felipe</a></i>
+                            <span>Desenvolvido por:</span> <i><a href="https://www.linkedin.com/in/gabrielm-oliveira/">Gabriel Modesto</a></i> - <i><a href="https://github.com/Peterson-santos">Peterson Henrique</a></i> - <i><a href="https://github.com/luizfelipe02081">Luiz Felipe</a></i>
                         </div>
                     </div>
                 </div>
@@ -902,6 +956,9 @@
     <a class="whatsapp-link" href="https://web.whatsapp.com/" target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
+
+    <!-- script imc -->
+    <script src="script.js"></script>
 
     <!-- Bootstrap link script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
