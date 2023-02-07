@@ -213,10 +213,14 @@ hr{
     position: relative;
     z-index: 1;
     color: rgb(235, 234, 234);
+    font-weight: 100;
     transition: all 0.3s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.card-plano-1 h6, .card-plano-2 h6, .card-plano-3 h6{
+    font-weight: 200;
+}
 
 .faixa{
     position: absolute;
@@ -399,7 +403,7 @@ hr{
 }
 
 .card-plano-1 h2, .card-plano-2 h2, .card-plano-3 h2{
-    font-weight: 600;
+    font-weight: 200;
     font-size: 1.5em;
 
 }
@@ -412,9 +416,24 @@ hr{
     text-align: center;
     font-size: 3em;
     font-weight: 400;
-    padding-bottom: 50px;
 }
 
+.plano-text{
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plano-sub-texto{
+    /* background-color: antiquewhite; */
+    text-align: center;
+    width: 60%;
+    font-size: 1.2em;
+}
 
 
 /* ----------------------------------------------------------------------------- cards - minimizados */
@@ -584,104 +603,6 @@ hr{
 
 .borda-efeito{
     width: 1%;
-}
-
-
-@media screen and (max-width:1000px){
-
-    .col-12{
-        width: 100%;
-    }
-    
-}
-
-
-@media (max-width:1000px){
-
-    .col-12{
-        width: 100%;
-    }
-
-    .academia-2{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-}
-
-@media (max-width:1200px){
-    .plan{
-        display: none;
-    }
-
-    .tabela-planos{
-        min-height: 90vh;
-        width: 100%;
-        background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
-        margin-top: 50px;
-        padding: 10px;
-        margin-bottom: 50px;
-        color: rgb(235, 234, 234);
-        font-weight: 600;
-        font-size: 1em;
-    }
-
-    .plano-max{
-        display: none;
-    }
-
-    #footer{
-        display: none;
-    }
-
-}
-
-@media (min-width:1400px){
-    .card-plano-1 ul li, .card-plano-2 ul li, .card-plano-3 ul li{
-        font-size: 1.0em;
-    }
-    
-}
-
-@media (max-width:400px){
-    .tabela-planos{
-        font-size: 0.7em;
-    }
-
-    .card-min-completo{
-        font-size: 0.8em;
-    }
-
-    .card-min-completo--valor h2{
-        color: black;
-        font-weight: 900;
-        font-size: x-large;
-    }
-
-    .card-min-completo--tipo h2{
-        font-weight: 500;
-        font-size:large;
-        
-    }
-
-}
-
-
-@media (min-width:1200px){
-    .tabela-planos{
-        display: none;
-    }
-
-    .card-completo{
-        display: none;
-    }
-
-    #footer-min{
-        display: none;
-
-
-    }
-
 }
 
 
@@ -1339,11 +1260,426 @@ footer{
 }
 
 
+/* -------------------------------------------------------------------- link whatsapp */
+.whatsapp-link {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px rgb(51, 51, 51);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.whatsapp-link:hover{
+    color: black;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fa-whatsapp {
+    /* margin-top: 16px; */
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------- localização e horario funcionamento */
+.principal-localizacao{
+    height: 100vh;
+    background-color: rgb(246 , 246, 246);
+    display: flex;
+    justify-content: center;
+}
+
+.localizacao{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding: 15vh 0;
+}
+
+    .principal-horarios{
+        /* border: 1px solid blue; */
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        background-image: url(../imagens/horarios.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .horarios{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(15, 15, 15, 0.9);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+        .horarios-titulo{
+            /* border: 1px solid blue; */
+            width: 90%;
+            height: 40%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: 400;
+            color: black;
+            
+        }
+
+        .horarios-info{
+            /* border: 1px solid blue; */
+            width: 90%;
+            height: 60%;
+            display: flex;
+            padding: 10px;
+        }
+
+            .horarios-info-dias{
+                /* border: 1px solid black; */
+                width: 50%;
+                height: 100%;
+            }
+
+            .horarios-info-horas{
+                /* border: 1px solid black; */
+                border-left: 1px solid black;
+                width: 50%;
+                height: 100%;
+
+            }
+
+            .horarios-info-dias, .horarios-info-horas{  /************************** aqui 2.0em*/
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.0em;
+                font-weight: 800;
+                color: black;
+            }
+
+            .horarios-info-dias ul li, .horarios-info-horas ul li, .horarios-info-horas ul, .horarios-info-dias ul{
+                text-decoration: none;
+                list-style: none;
+                padding: 0;
+                
+            }
+
+            .horarios-info-dias i, .horarios-info-horas i{
+                color: #000000;
+                font-size: 1.5em;
+                margin-bottom: 50px;
+            }
+
+
+
+    .mapa{
+        /* border: 1px solid blue; */
+        width: 30%;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    .mapa iframe{
+        border: 2px solid red;
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    .principal-mensagem{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        /* margin: 2px solid blue; */
+        background-color: rgb(246 , 246, 246);
+    }
+
+        .mensagem{
+            /* border: 1px solid red; */
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .principal-titulo h2{
+            font-weight: 500;
+        }
+
+        .principal-input{
+            /* border: 1px solid blue; */
+            width: 750px;
+            height: auto;
+        }
+
+            .principal-input-1{
+                /* border: 1px solid black; */
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                /* text-align: center; */
+                
+            }
+                .principal-input-1 input{
+                    background-color: transparent;
+                    width: 49%;
+                    height: 50px;
+                    border: 1px solid;
+                    outline: none;
+                    padding: 10px;
+                    /* margin: 5px; */
+                }
+
+                .principal-input-1 input::placeholder, .principal-input-2 textarea::placeholder{
+                    font-size: 1.0em;
+                }
+
+                .principal-input-2 textarea{
+                    padding: 10px;
+                }
+                
+               .principal-input-2{
+                /* border: 1px solid red; */
+                height: 250px;
+                margin-top: 15px;
+                outline: none;
+               }
+
+               .principal-input-2 textarea{
+                background-color: transparent;
+                width: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                outline: none;
+               }
+
+               
+               .principal-input-3{
+                padding: 10px;
+               }
+
+
+               .principal-input-3 input{
+                width: 150px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color: #e7e7e7;
+                font-weight: 600;
+               }
+
+               .principal-input-3 input:active{
+                background-color: #b8b8b8;
+                transition: all 0.1s;
+               }
+
+
+
+
+
 
 
 
 
 /* --------------------------------------------------- media queries */
+
+@media (max-width:1000px){
+
+    .col-12{
+        width: 100%;
+    }
+
+    .academia-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width:1200px){
+    .plan{
+        display: none;
+    }
+
+    .tabela-planos{
+        min-height: 90vh;
+        width: 100%;
+        background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
+        margin-top: 50px;
+        padding: 10px;
+        margin-bottom: 50px;
+        color: rgb(235, 234, 234);
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .plano-max{
+        display: none;
+    }
+
+    #footer{
+        display: none;
+    }
+
+    .principal-localizacao{
+        height: 100vh;
+        background-color: rgb(246 , 246, 246);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .localizacao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid rgb(55, 0, 255); */
+        padding: 0 0 15vh 0;
+    }
+    
+    .principal-horarios{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mapa{
+        width: 99%;
+        height: 70%;
+        margin-top: 15px;
+        margin-left: 0;
+        /* border: 1px solid blue; */
+    }
+    
+    .horarios{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(15, 15, 15, 0.9);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .horarios-titulo{
+        /* border: 1px solid blue; */
+        width: 90%;
+        height: 40%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.0em;
+        font-weight: 400;
+        color: black;
+        
+    }
+
+    .horarios-info-dias, .horarios-info-horas{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: black;
+    }
+
+    .horarios-info-dias i, .horarios-info-horas i{
+        color: #000000;
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    .horarios-info-dias i, .horarios-info-horas i{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+}
+
+@media (min-width:1400px){
+    .card-plano-1 ul li, .card-plano-2 ul li, .card-plano-3 ul li{
+        font-size: 1.0em;
+    }
+    
+}
+
+@media (max-width:400px){
+    .tabela-planos{
+        font-size: 0.7em;
+    }
+
+    .card-min-completo{
+        font-size: 0.8em;
+    }
+
+    .card-min-completo--valor h2{
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+    }
+
+    .card-min-completo--tipo h2{
+        font-weight: 500;
+        font-size:large;
+        
+    }
+
+}
+
+
+@media (min-width:1200px){
+    .tabela-planos{
+        display: none;
+    }
+
+    .card-completo{
+        display: none;
+    }
+
+    #footer-min{
+        display: none;
+
+
+    }
+
+}
+
+
 @media (max-width:600px){
     .tabela-planos{
         font-size: 0.6em;
@@ -1388,7 +1724,14 @@ footer{
         font-weight: 400;
         text-align: center;
     }
-    
+
+    .plano-sub-texto{
+        /* background-color: antiquewhite; */
+        text-align: center;
+        width: 70%;
+        font-size: 1.0em;
+    }
+
     .container-academia-2{
     
         font-size: 1.0em;
@@ -1450,41 +1793,13 @@ footer{
             }
         }
 
+        .horarios-info-dias, .horarios-info-horas{
+            font-size: 1.0em;
+            font-weight: 700;
+        }
+
 
     }
-
-
-
-/* -------------------------------------------------------------------- link whatsapp */
-.whatsapp-link {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 40px;
-    right: 10px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 1px 1px 2px rgb(51, 51, 51);
-    z-index: 1;
-    transition: all 0.3s;
-}
-
-.whatsapp-link:hover{
-    color: black;
-    margin-bottom: 10px;
-    transition: all 0.3s;
-}
-
-.fa-whatsapp {
-    /* margin-top: 16px; */
-    align-items: center;
-    text-align: center;
-}
-
-
 
 @media (min-width:990px){
     .collapse{
@@ -1492,10 +1807,54 @@ footer{
         justify-content: space-between;
     }
     
+
+
+
+    
 }
 
+@media (max-width:990px){
+    .principal-mensagem{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        margin: 2px solid blue;
+    }
+    
+        .mensagem{
+            /* border: 1px solid red; */
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .principal-input{
+            width: 100%;
+            height: auto;
+        }
+    
+            .principal-input-1{
+                /* border: 1px solid black; */
+                width: 100%;
+                display: flex;
+                flex-direction: column; 
+            }
+                .principal-input-1 input{
+                    width: 100%;
+                    margin-top: 15px;
+                }
+    
+               .principal-input-3{
+                /* border: 1px solid red; */
+                padding: 10px;
+                text-align: center;
+               }
+    
 
 
+}
 
 
 
