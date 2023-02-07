@@ -602,10 +602,11 @@ hr{
         width: 100%;
     }
 
-    /* remover dps
-    .tabela-planos{
-        display: none;
-    } */
+    .academia-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media (max-width:1200px){
@@ -616,8 +617,6 @@ hr{
     .tabela-planos{
         min-height: 90vh;
         width: 100%;
-
-      
         background-image: linear-gradient( 134.6deg,  rgba(201,37,107,1) 15.4%, rgba(116,16,124,1) 74.7% );
         margin-top: 50px;
         padding: 10px;
@@ -628,6 +627,10 @@ hr{
     }
 
     .plano-max{
+        display: none;
+    }
+
+    #footer{
         display: none;
     }
 
@@ -660,6 +663,7 @@ hr{
         font-size:large;
         
     }
+
 }
 
 
@@ -670,6 +674,12 @@ hr{
 
     .card-completo{
         display: none;
+    }
+
+    #footer-min{
+        display: none;
+
+
     }
 
 }
@@ -716,68 +726,12 @@ font-variation-settings:
 'opsz' 48
 }
 
-
-@media (max-width:600px){
-.tabela-planos{
-    font-size: 0.6em;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 300,
-    'GRAD' 0,
-    'opsz' 10
-  }
-
-  .card-min-completo{
-    font-size: 0.8em;
-}
-
-.card-min-completo--valor h2{
-    color: black;
-    font-weight: 900;
-    font-size: x-large;
-}
-
-.card-min-completo--tipo h2{
-    font-weight: 500;
-    font-size:large;
-    
-}
-
-.planos span h2{
-    text-align: center;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-.container-sobre-1{
-    /* background-color: aquamarine; */
-    width: 70%;
-    height: auto;
-    margin-top: 5%; margin-bottom: 5%;
-    font-size: 1.0em;
-    font-weight: 400;
-    text-align: center;
-}
-
-.container-academia-2{
-
-    font-size: 1.0em;
-    }
-
-}
-
-
-
-
-
 /* ----------------------------------------------------------------------------- rodape */
 footer{
     height: 100vh;
     /* background-color: rgba(48, 48, 48, 0.9); */
     color: #dddddd;
+    /* border: 1px solid red; */
 }
 
 .footer-principal{
@@ -793,6 +747,8 @@ footer{
     background-attachment: scroll;
     background-position: center;
 }
+
+
 
 .footer-principal-2{
     /* border: 3px solid rgb(0, 238, 255); */
@@ -877,7 +833,9 @@ footer{
     /* border: 5px solid red; */
     width: 60%;
     width: 350px;
-}
+}   
+
+
 
 .footer-div-1-2{
     /* border: 1px solid red; */
@@ -948,7 +906,6 @@ footer{
 }
 
 
-
 /* ---------------------------------------------------------------- rodape - contato */
 .contato{
     /* border: 1px solid red; */
@@ -1017,3 +974,310 @@ footer{
     color: aliceblue;
     font-weight: 300;
 }
+
+/* ------------------------------------------------------------------------- rodape minimizado */
+.footer-principal-min{
+    min-height: 100vh;
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../imagens/footer\ imagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.footer-principal-min-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    background-color: rgba(29, 29, 29, 0.9);
+}
+
+.footer-div-1-min, .footer-div-2-min, .footer-div-3-min{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 100%;
+    color: rgb(235, 234, 234);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.footer-div-2-min a{
+    text-decoration: none;
+    color: rgb(235, 234, 234);
+    font-size: 1.5em;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.divisao-min h2{
+    margin-bottom: 50px;
+    font-size: 2.0em;
+}
+
+.divisao-min ul li a{
+    color: rgb(235, 234, 234); 
+    text-decoration: none;
+
+}
+
+.divisao-min li{
+    text-decoration: none;
+    color: rgb(235, 234, 234);
+    font-size: 1.3em;
+}
+
+.divisao-min ul{
+    /* background-color: aqua; */
+    padding: 0;
+    align-items: center;
+}
+
+.footer-div-2-min, .footer-div-3-min{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-div-1-1-min{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.footer-div-1-1-min img{
+    /* border: 5px solid red; */
+    width: 300px;
+    padding-top: 100px;
+    margin-bottom: 90px;
+}   
+
+
+
+.footer-div-1-2-min{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.footer-div-1-2-min h6{
+    font-size: 1.5em;
+}
+
+.footer-min-icons{
+    /* background-color: antiquewhite; */
+    height: auto;
+    /* margin-top: 30px; */
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-min-icons a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* ---------------------------------------------------------------- rodape minimizado - contato */
+.contato-min{
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+    text-align: center;
+}
+
+.contato-min-texto{
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.contato-min-icone{
+    /* border: 1px solid; */
+    font-size: 1.9em;
+}
+
+.footer-div-3-min ul li{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+
+}
+
+
+.footer-principal-3-min{
+    background-color: rgba(15, 15, 15, 0.9);
+    font-weight: 600;
+    height: 5%;
+}
+
+
+
+/* ------------------------------------------------------------- rodape minimizado - direitos */
+.direitos-min{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.dir-1-min{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-left: 15px;
+    text-align: center;
+}
+.dir-2-min{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.dir-1-min a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+}
+.dir-2-min a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- media queries */
+@media (max-width:600px){
+    .tabela-planos{
+        font-size: 0.6em;
+    }
+    
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 10
+    }
+    
+    .card-min-completo{
+        font-size: 0.8em;
+    }
+    
+    .card-min-completo--valor h2{
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+    }
+    
+    .card-min-completo--tipo h2{
+        font-weight: 500;
+        font-size:large;
+        
+    }
+    
+    .planos span h2{
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    
+    .container-sobre-1{
+        /* background-color: aquamarine; */
+        width: 70%;
+        height: auto;
+        margin-top: 5%; margin-bottom: 5%;
+        font-size: 1.0em;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .container-academia-2{
+    
+        font-size: 1.0em;
+        }
+    
+        .direitos-min{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            font-size: 0.7em;
+        }
+        .footer-div-2-min a{
+            text-decoration: none;
+            color: rgb(235, 234, 234);
+            font-size: 1.0em;
+            /* border: 1px solid red; */
+            padding: 10px;
+        }
+        
+        .divisao-min h2{
+            margin-bottom: 50px;
+            font-size: 1.3em;
+        }
+        
+        
+        .divisao-min li{
+            text-decoration: none;
+            color: rgb(235, 234, 234);
+            font-size: 1.0em;
+        }
+
+        .contato-min-icone{
+            border: 1px solid transparent;
+            width: 50px;
+            font-size: 1.0em;
+        }
+
+        .fa-solid{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-div-1-2-min h6{
+            font-size: 1.0em;
+        }
+
+    }
