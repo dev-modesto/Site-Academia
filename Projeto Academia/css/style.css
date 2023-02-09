@@ -8,6 +8,10 @@
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .nav-item a{
     color: black;
     font-weight:500;
@@ -2011,4 +2015,3 @@ footer{
 
 
 }
-
